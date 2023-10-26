@@ -1,24 +1,23 @@
-# README
+# Card Game Test
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+ActionCable & React based card game demo
 
-Things you may want to cover:
+## Running
 
-* Ruby version
+`./bin/dev` - this should launch the rails server and shakapacker client/server
 
-* System dependencies
+Note: the webpack server doesn't seem to terminate gracefully and requires a double sigterm to kill
 
-* Configuration
+## Dependencies
 
-* Database creation
+### Redis
 
-* Database initialization
+`brew install redis` - install redis
 
-* How to run the test suite
+`brew services start redis` - start the server
 
-* Services (job queues, cache servers, search engines, etc.)
+`redis-cli ping` - should respond "PONG" if server is configured correctly
 
-* Deployment instructions
+### OS Dependencies
 
-* ...
+`brew install libyaml` - required to build the `psych` gem

@@ -67,3 +67,5 @@ gem "shakapacker", "= 7.1"
 gem "react_on_rails", "= 13.4"
 
 gem "foreman", "= 0.87.2"
+
+gem "redis", "= 5.0"

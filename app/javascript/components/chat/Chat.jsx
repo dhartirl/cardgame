@@ -24,7 +24,7 @@ const Chat = ({channel}) => {
     event.preventDefault();
     const message = {
       command: "chat",
-      identifier: {channel: "RoomChannel"},
+      identifier: {channel: channel},
       data: {message: event.target.querySelector('.Chat-input').value}
     };
     messageSubscription.send(message);
